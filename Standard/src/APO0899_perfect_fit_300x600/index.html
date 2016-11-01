@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+
+        <!-- Add all CSS is css folder here -->
+        <!-- build:css -->
+        <link href="css/main.css" type="text/css" rel="stylesheet"/>
+        <!-- endbuild -->
+
+        <!-- Add all JS is js folder here -->
+        <!-- build:js -->
+        <script type="application/javascript" src="js/CLMBanners.js"></script>
+        <script type="application/javascript" src="js/main.js"></script>
+        <!-- endbuild -->
+
+        <!-- DO NOT EDIT THIS SECTION -->
+
+        <!-- build:init -->
+        <script type="application/javascript">
+            var clm = new CLM(0);
+        </script>
+        <!-- endbuild -->
+
+
+    </head>
+
+    <body>
+        <div id="clm-banner">
+
+            <div id="image-container" class="hero-container clm-container">
+                <img id="find" src="imgs/find.png" width="300" height="600" />
+                <img id="the" src="imgs/the.png" width="300" height="600" />
+                <img id="perfect" src="imgs/perfect.png" width="300" height="600" />
+                <img id="fit" src="imgs/fit.png" width="300" height="600" />
+            </div>
+            
+            <div class="clm-container"><img id="text01" src="imgs/text01.png"  width="300" height="600"></div>
+            <div class="clm-container"><img id="text02" src="imgs/text02.png"  width="300" height="600"></div>
+            
+            <div id="parcel-container" class="clm-container">
+                <img id="parcel" src="imgs/express-post-parcel.png"  width="300" height="600">
+                <img id="parcel-open" src ="imgs/parcel-open.png" width="300" height="9">
+            </div>
+
+            <div class="clm-container"><img id="logo" src="imgs/logo.png"  width="300" height="600"></div>
+            
+            <div class="clm-container"><img id="text03" src="imgs/text03.png"  width="300" height="600"></div>
+            <div class="clm-container"><img id="text04" src="imgs/text04.png"  width="300" height="600"></div>
+
+            <div class="clm-container"><img src="imgs/border.png" width="300" height="600"></div>
+            <div id="clm-border"></div>
+
+            <div id="cta"><img src="imgs/cta-text.png"  width="150" height="36"></div>
+
+        </div>
+
+
+        <!-- build:publish -->
+        <script>
+            function checkInit() {
+                startAnimation();
+            }
+
+            function triggerClickthrough() {
+                console.log("Clickthrough Triggered");
+            }
+        </script>
+        <!-- endbuild -->
+        <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script>    
+    </body>
+</html>

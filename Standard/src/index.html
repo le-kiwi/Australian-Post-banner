@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Banners Index</title>
+
+    <style type="text/css" rel="stylesheet">
+        body {
+            font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+            color: #ffffff;
+            background: #000000;
+            margin: 0px;
+            padding: 0px;
+        }
+        iframe {
+            margin: 0px;
+            padding: 0px;
+            width: 100vw;
+            min-height: 1050px;
+            border: none;
+
+        }
+        #banner-container {
+            margin: 0px;
+            padding: 0px;
+            width: 100vw;
+            min-height: 700px;
+            border: none;
+            background: #333333;
+            padding: 50px;
+        }
+
+        .container {
+            margin: auto auto;
+            width: 510px;
+            height: 90px;
+
+            text-align: center;
+        }
+
+        .container > .dropdown {
+            margin: 0 20px;
+            vertical-align: top;
+        }
+        button {
+            display: inline-block;
+            height: 28px;
+            width: 100px;
+            float: left;
+            background: #f2f2f2;
+            border: 1px solid;
+            border-color: white #f7f7f7 whitesmoke;
+            border-radius: 3px;
+            background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+            background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+            background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+            background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+
+        }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            height: 28px;
+            width: 350px;
+            background: #f2f2f2;
+            border: 1px solid;
+            border-color: white #f7f7f7 whitesmoke;
+            border-radius: 3px;
+            background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+            background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+            background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+            background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+        }
+
+        .dropdown:before, .dropdown:after {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            top: 9px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border: 4px dashed;
+            border-color: #888888 transparent;
+            pointer-events: none;
+        }
+
+        .dropdown:before {
+            border-bottom-style: solid;
+            border-top: none;
+        }
+
+        .dropdown:after {
+            margin-top: 7px;
+            border-top-style: solid;
+            border-bottom: none;
+        }
+
+        .dropdown-select {
+            position: relative;
+            width: 130%;
+            margin: 0;
+            padding: 6px 8px 6px 10px;
+            height: 28px;
+            line-height: 14px;
+            font-size: 12px;
+            color: #62717a;
+            text-shadow: 0 1px white;
+            background: #f2f2f2; /* Fallback for IE 8 */
+            background: rgba(0, 0, 0, 0) !important; /* "transparent" doesn't work with Opera */
+            border: 0;
+            border-radius: 0;
+            -webkit-appearance: none;
+        }
+
+        .dropdown-select:focus {
+            z-index: 3;
+            width: 100%;
+            color: #394349;
+            outline: 2px solid #49aff2;
+            outline: 2px solid -webkit-focus-ring-color;
+            outline-offset: -2px;
+        }
+
+        .dropdown-select > option {
+            margin: 3px;
+            padding: 6px 8px;
+            text-shadow: none;
+            background: #f2f2f2;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAApCAYAAACPxxRyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjM5M0UyNUY2NjQ1MTFFNTlGOEZEMDg1OTEzRDU4OTkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjM5M0UyNjA2NjQ1MTFFNTlGOEZEMDg1OTEzRDU4OTkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGMzkzRTI1RDY2NDUxMUU1OUY4RkQwODU5MTNENTg5OSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGMzkzRTI1RTY2NDUxMUU1OUY4RkQwODU5MTNENTg5OSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pr31GlcAAAtgSURBVHja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"/>
+
+<section class="container" id="banner-list-container">
+
+    <h1>Banner List</h1>
+    <div class="dropdown">
+        <select id='banner-list' name="banner-list" class="dropdown-select">
+            <!-- build:list -->
+            <option value="CLE0000_JobName_300x250">CLE0000_JobName_300x250</option>
+            <option value="CLE0000_JobName_300x250">CLE0000_JobName_300x250</option>
+            <!-- endbuild -->
+        </select>
+    </div>
+    <button id="direct-link">Direct Link</button>
+</section>
+<section id="banner-container">
+    <iframe id="banner-iframe">
+
+    </iframe>
+</section>
+<script type="application/javascript">
+    var iframe;
+    var bannerList;
+    var directLink;
+    var bannerListContainer;
+    window.onload = function(){
+        iframe = document.getElementById("banner-iframe");
+        bannerList = document.getElementById("banner-list");
+        bannerListContainer = document.getElementById("banner-list-container");
+        directLink = document.getElementById("direct-link");
+        updateSelectedBanner();
+
+        bannerList.onchange=function(){
+            updateSelectedBanner();
+        }
+        directLink.onclick = function(){
+            var bannerSelected = bannerList.options[bannerList.selectedIndex].value;
+            window.location.href = 'index.html?display='+bannerSelected;
+        }
+        var displayParam = getURLParameter("display");
+        if(displayParam != null){
+            bannerListContainer.style.display = "none";
+            iframe.src = displayParam+'/index.html?rand=' + Math.round(Math.random() * 10000000);
+        }
+    }
+
+    function updateSelectedBanner(){
+        var bannerSelected = bannerList.options[bannerList.selectedIndex].value;
+        iframe.src = bannerSelected+'/index.html?rand=' + Math.round(Math.random() * 10000000);
+    }
+
+    function getURLParameter(name) {
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+    }
+</script>
+
+
+
+</body>
+</html>
